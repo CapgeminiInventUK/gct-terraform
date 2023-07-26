@@ -1,7 +1,7 @@
 variable "environment" {
   type        = string
   description = "Defines the environment to be built"
-  default     = "Dev"
+  default     = "dev"
 }
 
 variable "location" {
