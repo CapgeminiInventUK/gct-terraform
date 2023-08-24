@@ -132,5 +132,3 @@ resource "azapi_resource" "link-fe-to-be" {
     }
   })
 }
-
-data "azurerm_client_config" "current" {}
