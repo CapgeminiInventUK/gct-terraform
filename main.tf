@@ -98,7 +98,7 @@ resource "azurerm_service_plan" "gct-service-plan" {
 }
 
 resource "azurerm_linux_function_app" "gct-function-app" {
-  name                = "gctfunctionapp"
+  name                = "gctfunctionappalextracker"
   resource_group_name = var.resource_group_name
   location            = var.location
 
