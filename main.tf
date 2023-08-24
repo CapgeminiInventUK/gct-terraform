@@ -74,7 +74,7 @@ resource "azurerm_key_vault" "gct-keyvault" {
 
 
 resource "azurerm_storage_account" "gct-storage-account" {
-  name                     = "gct-storage"
+  name                     = "gctStorage"
   resource_group_name      = var.resource_group_name
   location                 = var.location
   account_tier             = "Standard"
@@ -86,7 +86,7 @@ resource "azurerm_storage_account" "gct-storage-account" {
 }
 
 resource "azurerm_service_plan" "gct-service-plan" {
-  name                = "gct-service-plan"
+  name                = "gctServicePlan"
   resource_group_name = var.resource_group_name
   location            = var.location
   os_type             = "Linux"
@@ -98,7 +98,7 @@ resource "azurerm_service_plan" "gct-service-plan" {
 }
 
 resource "azurerm_linux_function_app" "gct-function-app" {
-  name                = "gct-function-app"
+  name                = "gctFunctionApp"
   resource_group_name = var.resource_group_name
   location            = var.location
 
@@ -132,3 +132,4 @@ resource "azapi_resource" "link-fe-to-be" {
     }
   })
 }
+
